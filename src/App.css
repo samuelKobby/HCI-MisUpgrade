@@ -1,0 +1,32 @@
+/* Additional custom styles */
+.btn-primary {
+  @apply bg-ug-blue hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg shadow-button transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+}
+
+.btn-secondary {
+  @apply bg-gray-100 hover:bg-gray-200 text-ug-gray font-medium py-2 px-4 rounded-lg border border-gray-300 transition-all duration-200 hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2;
+}
+
+.input-field {
+  @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ug-light-blue focus:border-ug-light-blue transition-all duration-200 placeholder-gray-400;
+}
+
+.error-message {
+  @apply text-red-600 text-sm mt-1 flex items-center gap-1;
+}
+
+.success-message {
+  @apply text-green-600 text-sm mt-1 flex items-center gap-1;
+}
+
+.card {
+  @apply bg-white rounded-xl shadow-card border border-gray-100;
+}
+
+.sidebar-item {
+  @apply flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-ug-light-gray hover:text-ug-blue rounded-lg transition-all duration-200 cursor-pointer;
+}
+
+.sidebar-item.active {
+  @apply bg-ug-light-blue text-white hover:bg-ug-blue;
+}
