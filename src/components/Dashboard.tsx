@@ -98,7 +98,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onLogout }) => {
   }, [])
 
   return (
-    <div className="min-h-screen bg-gray-100">
+  <div className="min-h-screen bg-gray-100">
       {/* Header */}
       <div className="bg-white border-b border-gray-300 px-4 py-1">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
@@ -121,7 +121,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onLogout }) => {
         </div>
       </div>
 
-      <div className="flex max-w-7xl mx-auto relative">
+  <div className="flex relative">
         {/* Mobile Overlay */}
         {isMobileMenuOpen && (
           <div 
@@ -133,7 +133,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onLogout }) => {
         {/* Sidebar */}
         <div className={`w-64 bg-white border-r border-gray-300 transition-transform duration-300 ease-in-out md:translate-x-0 z-50 flex flex-col ${
           isMobileMenuOpen ? 'translate-x-0 fixed h-screen top-0' : '-translate-x-full fixed md:relative h-screen md:h-auto md:min-h-screen'
-        }`} ref={dropdownRef}>
+        }`} ref={dropdownRef} style={{left: 0}}>
           <div className="bg-blue-500 text-white px-4 py-2 text-center font-medium text-sm flex-shrink-0">
             Student iEnabler
           </div>
